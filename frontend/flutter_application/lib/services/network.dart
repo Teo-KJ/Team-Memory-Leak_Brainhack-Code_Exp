@@ -13,12 +13,11 @@ class NetworkManager {
 
     if (response.statusCode == 200) {
       var result = jsonDecode(response.body);
-      var resultList = [];
+      List<Stall> resultList = [];
       for (var i = 0; i < result.length; i++) {
         resultList.add(Stall.fromJson(result[i]));
       }
-      print(resultList);
-      return [];
+      return resultList;
     } else {
       throw Exception('Failed to load album');
     }

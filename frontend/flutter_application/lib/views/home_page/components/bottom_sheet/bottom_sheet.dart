@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/views/home_page/components/bottom_sheet/stall_list_item.dart';
+import 'package:flutter_application/views/profile_page/view_model.dart';
+import 'package:provider/provider.dart';
+
+import '../../view_model.dart';
 
 class HomePageBottomSheet extends StatefulWidget {
   const HomePageBottomSheet({Key key}) : super(key: key);
@@ -29,9 +33,17 @@ class _HomePageBottomSheetState extends State<HomePageBottomSheet> {
   }
 
   Widget hawkerListView() {
-    return ListView(
-      padding: EdgeInsets.all(0),
-      children: [1, 2, 3, 4, 5, 6, 7].map((e) => StallListItem()).toList(),
+    return Consumer<HomePageViewModel>(
+      builder: (context, viewModel, child) {
+        return ListView(
+          padding: EdgeInsets.all(0),
+          children: viewModel.stalls
+              .map((e) => StallListItem(
+                    stall: e,
+                  ))
+              .toList(),
+        );
+      },
     );
   }
 }
