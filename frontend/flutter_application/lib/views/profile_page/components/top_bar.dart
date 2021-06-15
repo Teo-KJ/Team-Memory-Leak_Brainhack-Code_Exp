@@ -17,17 +17,24 @@ class ProfilePageTopBar extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.all(20),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text('500',
-                style: TextStyle(color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 30)),
-            Container(
-              width: 12,
-            ),
-            Text('Points',
-                style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16)),
-            Spacer(),
-            Text('Redeem Now',
-                style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 18))
+            Row(
+              children: [
+                Text('500',
+                    style: TextStyle(
+                        color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 30)),
+                Container(
+                  width: 12,
+                ),
+                Text('Points',
+                    style:
+                        TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 16)),
+              ],
+            )
+            // Spacer(),
+            // Text('Redeem Now',
+            //     style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 18))
           ],
         ),
       ),
@@ -44,6 +51,7 @@ class ProfilePageTopBar extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(60, 40, 60, 0),
           child: Container(
             height: 100,
+            width: 240,
             child: pointsContent(),
             decoration: BoxDecoration(
               color: Colors.white,

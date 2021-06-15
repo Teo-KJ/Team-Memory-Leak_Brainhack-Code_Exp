@@ -37,9 +37,25 @@ class _ScanQRPageState extends State<ScanQRPage> {
         children: <Widget>[
           Expanded(
             flex: 5,
-            child: QRView(
-              key: qrKey,
-              onQRViewCreated: _onQRViewCreated,
+            child: Stack(
+              children: [
+                QRView(
+                  key: qrKey,
+                  onQRViewCreated: _onQRViewCreated,
+                ),
+                Container(
+                  width: double.infinity,
+                  height: double.infinity,
+                  child: Center(
+                    child: Container(
+                      width: MediaQuery.of(context).size.width * 0.7,
+                      height: MediaQuery.of(context).size.width * 0.7,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Color.fromARGB(255, 184, 39, 37), width: 5)),
+                    ),
+                  ),
+                )
+              ],
             ),
           ),
           Expanded(
@@ -47,7 +63,10 @@ class _ScanQRPageState extends State<ScanQRPage> {
             child: Center(
               child: (result != null)
                   ? Text('Barcode Type: ${describeEnum(result.format)}   Data: ${result.code}')
-                  : Text('Scan a code'),
+                  : Text('Scan the QR Code and Earn Points!',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      )),
             ),
           )
         ],

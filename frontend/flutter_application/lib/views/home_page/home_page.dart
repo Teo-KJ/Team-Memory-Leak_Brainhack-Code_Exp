@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/views/home_page/components/bottom_sheet/bottom_sheet.dart';
 import 'package:flutter_application/views/home_page/components/map_view.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,6 +12,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: HomeMapView());
+    return Scaffold(
+        body: Column(children: [
+      Expanded(
+        child: HomeMapView(),
+      ),
+      Expanded(
+        child: HomePageBottomSheet(),
+      )
+    ]));
   }
 }

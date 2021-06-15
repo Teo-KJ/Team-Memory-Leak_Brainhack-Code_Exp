@@ -7,7 +7,7 @@ class VoucherHistory extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Color.fromARGB(255, 243, 243, 243),
-      height: 180,
+      height: 150,
       width: MediaQuery.of(context).size.width,
       child: Padding(
         padding: const EdgeInsets.all(16.0),

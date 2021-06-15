@@ -6,11 +6,14 @@ class VoucherSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 180,
       child: Column(
         children: [
-          Text(
-            'Here are some recommended vouchers for you to redeem',
+          Padding(
+            padding: const EdgeInsets.only(left: 16, right: 16),
+            child: Text(
+              'Here are some recommended vouchers for you to redeem',
+            ),
           ),
           Container(
             height: 20,
@@ -36,7 +39,7 @@ class VoucherSection extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 20),
       child: Container(
-        height: 100,
+        height: 80,
         width: 160,
         child: Column(
           children: [
