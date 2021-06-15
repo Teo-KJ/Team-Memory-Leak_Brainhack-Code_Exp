@@ -23,8 +23,8 @@ let storesList = [
         "imgURLs": ["https://live.staticflickr.com/65535/48130596001_54280f6d2b_h.jpg","https://live.staticflickr.com/65535/48083521626_24b2cd0592_h.jpg"],
         "description": "",
         "address":"2 Adam Rd, #01-13, Singapore 289877",
-        "latitude": 1.324082,
-        "longitude":103.814045
+        "latitude": 1.324700,
+        "longitude":103.814066
     },
     {
         "id":3,
@@ -32,8 +32,8 @@ let storesList = [
         "imgURLs": ["https://live.staticflickr.com/65535/48130680242_0026a4e428_h.jpg","https://live.staticflickr.com/65535/48083622962_d2f1e5868f_h.jpg"],
         "description": "",
         "address":"2 Adam Rd, #01-19, Singapore 289877",
-        "latitude": 1.324253,
-        "longitude":103.814142
+        "latitude": 1.324716,
+        "longitude":103.814425
     },
     {
         "id":4,
@@ -41,8 +41,8 @@ let storesList = [
         "imgURLs": ["https://live.staticflickr.com/65535/48130550358_6e8af4dc03_h.jpg","https://live.staticflickr.com/65535/48130523916_a6b6b17dae_h.jpg"],
         "description": "",
         "address":"2 Adam Rd, #01-31, Singapore 289877",
-        "latitude": 1.324173,
-        "longitude":103.814249
+        "latitude": 1.324185,
+        "longitude":103.814500
     },
     {
         "id":5,
@@ -50,8 +50,8 @@ let storesList = [
         "imgURLs": ["https://live.staticflickr.com/65535/48130621243_08a535d7a7_h.jpg","https://live.staticflickr.com/65535/48083622772_ace2370e36_h.jpg"],
         "description": "",
         "address":"2 Adam Rd, #01-26, Singapore 289877",
-        "latitude": 1.324146,
-        "longitude":103.814174
+        "latitude": 1.323922,
+        "longitude":103.814651
     },
     {
         "id":6,
@@ -59,8 +59,8 @@ let storesList = [
         "imgURLs": ["https://live.staticflickr.com/65535/48130621178_bf1fb54005_h.jpg","https://live.staticflickr.com/65535/48083520901_0d0cd15334_h.jpg"],
         "description": "",
         "address":"2 Adam Rd, #01-10, Singapore 289877",
-        "latitude": 1.324103,
-        "longitude":103.814126
+        "latitude": 1.324507,
+        "longitude":103.813092
     },
     {
         "id":7,
@@ -68,8 +68,8 @@ let storesList = [
         "imgURLs": ["https://live.staticflickr.com/65535/48090807302_b9ad88465d_h.jpg","https://live.staticflickr.com/65535/48090709291_81b702998a_h.jpg"],
         "description": "",
         "address":"2 Adam Rd, #01-02, Singapore 289877",
-        "latitude": 1.324082,
-        "longitude":103.814292
+        "latitude": 1.323751,
+        "longitude":103.814267
     },
     {
         "id":8,
@@ -77,8 +77,8 @@ let storesList = [
         "imgURLs": ["https://live.staticflickr.com/65535/48130681032_1ccf30ba99_h.jpg","https://live.staticflickr.com/65535/48083622987_618b9de903_h.jpg"],
         "description": "",
         "address":"2 Adam Rd, #01-22, Singapore 289877",
-        "latitude": 1.324065,
-        "longitude":103.814200
+        "latitude": 1.324074,
+        "longitude":103.812861
     },
 ]
 
