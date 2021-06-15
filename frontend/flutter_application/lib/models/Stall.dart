@@ -5,6 +5,8 @@ class Stall {
   String name;
   HawkerCentre hawkerCentre;
   List<String> imgURLs;
+  double latitude;
+  double longitude;
 
   Stall({this.id, this.name, this.hawkerCentre, this.imgURLs});
 }
