@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0fc3dc53-199c-4bfa-b9a7-54fad79b7d39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/flutter_application/lib/mainNew.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/flutter_application/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/flutter_application/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/flutter_application/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/flutter_application/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/flutter_application/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/flutter_application/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/flutter_application/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/flutter_application/test/widget_test.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tzgeoVtmvuUIYM5Y3171jU3Xpn" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0fc3dc53-199c-4bfa-b9a7-54fad79b7d39" name="Default Changelist" comment="" />
+      <created>1623777431639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623777431639</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623777587028">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1623777587028" />
+    <state width="591" height="59" key="GridCell.Tab.0.bottom" timestamp="1623777410391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="591" height="59" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1623777410391" />
+    <state width="591" height="59" key="GridCell.Tab.0.center" timestamp="1623777410391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="591" height="59" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1623777410391" />
+    <state width="591" height="59" key="GridCell.Tab.0.left" timestamp="1623777410390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="591" height="59" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1623777410390" />
+    <state width="591" height="59" key="GridCell.Tab.0.right" timestamp="1623777410391">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="591" height="59" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1623777410391" />
+  </component>
+</project>
