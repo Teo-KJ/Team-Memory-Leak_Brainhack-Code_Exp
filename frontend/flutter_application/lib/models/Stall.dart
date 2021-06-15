@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter_application/models/HawkerCentre.dart';
 
 class Stall {
@@ -22,7 +24,7 @@ class Stall {
     List<String> imagesList = new List<String>();
     int length = json['imgURLs'].length;
     for (int i = 0; i < length; i++) {
-      imagesList.add(json[i]);
+      imagesList.add(json['imgURLs'][i] as String);
     }
     return Stall(
         id: json['id'],
