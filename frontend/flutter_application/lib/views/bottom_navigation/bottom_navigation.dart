@@ -2,6 +2,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application/views/home_page/home_page.dart';
 import 'package:flutter_application/views/profile_page/profile_page.dart';
+import 'package:flutter_application/views/qr_page/scan_qr_page.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
 class BottomNavigation extends StatefulWidget {
@@ -15,6 +16,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   int _currentIndex = 0;
   var pages = [
     HomePage(),
+    ScanQRPage(),
     ProfilePage(),
   ];
 
@@ -34,6 +36,12 @@ class _BottomNavigationState extends State<BottomNavigation> {
           BottomNavyBarItem(
             icon: Icon(Icons.food_bank),
             title: Text('Nearby Stalls'),
+            activeColor: Colors.red,
+            textAlign: TextAlign.center,
+          ),
+          BottomNavyBarItem(
+            icon: Icon(Icons.qr_code),
+            title: Text('Scan'),
             activeColor: Colors.red,
             textAlign: TextAlign.center,
           ),
