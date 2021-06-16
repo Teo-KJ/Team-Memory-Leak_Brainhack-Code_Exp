@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/views/bottom_navigation/bottom_navigation.dart';
 import 'package:flutter_application/views/login/components/background.dart';
 import 'package:flutter_application/views/login/components/acc_check.dart';
 import 'package:flutter_application/views/login/components/rounded_button.dart';
@@ -35,7 +36,13 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BottomNavigation(),
+                    ));
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(

@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application/services/network.dart';
+import 'package:flutter_application/views/quiz_page/quiz_page.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class ScanQRPage extends StatefulWidget {
@@ -81,7 +82,8 @@ class _ScanQRPageState extends State<ScanQRPage> {
       Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => Container(),
+            builder: (context) => QuizPage(0, 'What is the most expensive food item here?',
+                ['Fried Bee Hoon', 'Nasi Lemak', 'Fish and Chips']),
           ));
     });
   }
