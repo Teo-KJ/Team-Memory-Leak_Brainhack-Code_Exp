@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application/views/bottom_navigation/bottom_navigation.dart';
 import 'package:page_transition/page_transition.dart';
@@ -35,28 +36,67 @@ class QuizPage extends State<MyApp> {
                   child: Padding(
                       padding: EdgeInsets.fromLTRB(
                           0, MediaQuery.of(context).size.height * 0.07, 0, 0),
-                      child: Column(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                          children:<Widget>[
+
+                                 Padding(
+                                   padding: EdgeInsets.fromLTRB(0, 0, 0, 19),
+                                     child:Image.asset('assets/images/questionicon3.jpg',
+                          height: 120,
+                          width: 70,)),
+                        SizedBox(width:10),
+                        Column(
                         children: [
+
                           Text(
                             'Quiz Time',
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 30,
+                                fontSize: 35,
                                 fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+                          SizedBox(height: MediaQuery.of(context).size.height * 0.006),
                           Text('Ah Huat Bee Hoon',
                               style: TextStyle(color: Colors.white, fontSize: 20)),
                         ],
-                      ))),
+                      )]))),
+              Stack(
+                  alignment:Alignment.topCenter,
+                  children:<Widget>[
+              Container(
+                  height: 250.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.7), BlendMode.dstATop),
+                      alignment: Alignment.topLeft,
+                      image: AssetImage('assets/images/hawker.jpg'),
+                      fit: BoxFit.fitWidth,
+                    ),
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(40),
+                        bottomRight: Radius.circular(40)
+                      )
+                  )),
               Padding(
-                  padding: EdgeInsets.fromLTRB(20, 20, 20, 10),
-                  child: Text(this.question,
+                  padding: EdgeInsets.fromLTRB(20, 30, 20, 10),
+                  child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.white70,
+                          border: Border.all(width: 1,color: Colors.black54),
+
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(20),
+                          )),
+
+                      child:Padding(
+                        padding: EdgeInsets.all(20),
+                          child:Text(this.question,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 40,
-                          fontWeight: FontWeight.bold))),
+                          fontWeight: FontWeight.bold)))))]),
               SizedBox(
                 height: 20,
               ),
@@ -185,11 +225,21 @@ class QuizPage extends State<MyApp> {
                 children: <Widget>[
                   Spacer(),
                   SizedBox(width:30),
-                  Expanded(child:Center(child:Row(children:<Widget>[
-                  Text('${this.index+1}',
-                  style:TextStyle(color: Colors.red,fontSize: 22)),
-                  Text('/5',style:TextStyle(fontSize:22))]))),
+                  Container(
+                      decoration: BoxDecoration(
+                        color: Colors.cyanAccent,
+                          border: Border.all(width: 1,color: Colors.cyanAccent),
 
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(200),
+                          )),
+                      child:Padding(
+                        padding: EdgeInsets.all(6),
+                          child:Center(child:Row(children:<Widget>[
+                  Text('${this.index+1}',
+                  style:TextStyle(color: Colors.redAccent,fontSize: 22)),
+                  Text('/5',style:TextStyle(fontSize:22))])))),
+                  SizedBox(width:MediaQuery.of(context).size.width*0.23),
                   Padding(
                     padding:EdgeInsets.fromLTRB(0, 0, 15, 0),
                       child:ElevatedButton(

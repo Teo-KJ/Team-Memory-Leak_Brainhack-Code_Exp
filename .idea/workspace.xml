@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc3dc53-199c-4bfa-b9a7-54fad79b7d39" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Team-Memory-Leak_Brainhack-Code_Exp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Team-Memory-Leak_Brainhack-Code_Exp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/flutter_application/assets/images/questionIcon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/flutter_application/lib/QuizQuestions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/flutter_application/lib/QuizQuestions.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/flutter_application/lib/mainNew.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/flutter_application/lib/mainNew.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/flutter_application/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/flutter_application/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/flutter_application/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/flutter_application/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +28,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/flutter_application/assets/images" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jordan Tan Rei Yao\OneDrive - Nanyang Technological University\Team-Memory-Leak_Brainhack-Code_Exp\frontend\flutter_application\assets\images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
