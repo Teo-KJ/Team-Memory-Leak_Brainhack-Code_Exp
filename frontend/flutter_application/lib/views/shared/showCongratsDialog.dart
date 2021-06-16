@@ -5,7 +5,8 @@ import 'package:material_dialogs/material_dialogs.dart';
 Future<void> congratsDialog(BuildContext context, int numPoints) {
   return Dialogs.materialDialog(
     color: Colors.white,
-    msg: 'Congratulations, you won $numPoints points',
+    msg:
+        'Congratulations, you won $numPoints points. Your total points now is ${Database.instance.currentPoints + numPoints}. You can see your updated points amount in the profile page',
     title: 'Congratulations',
     animation: 'assets/cong_example.json',
     context: context,
