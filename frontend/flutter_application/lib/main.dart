@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/views/bottom_navigation/bottom_navigation.dart';
+import 'package:flutter_application/views/login/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BottomNavigation(),
+      home: LoginScreen(),
     );
   }
 }
