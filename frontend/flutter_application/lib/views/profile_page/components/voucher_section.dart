@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/services/database.dart';
 
 class VoucherSection extends StatelessWidget {
   const VoucherSection({Key key}) : super(key: key);
@@ -30,7 +31,10 @@ class VoucherSection extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.only(left: 20, right: 20),
         scrollDirection: Axis.horizontal,
-        children: [listItem(), listItem(), listItem(), listItem(), listItem()],
+        children: List.generate(Database.instance.getNumAvailableVouchers(), (index) => index)
+            .toList()
+            .map((e) => listItem())
+            .toList(),
       ),
     );
   }

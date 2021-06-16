@@ -29,10 +29,12 @@ class _ScanQRPageState extends State<ScanQRPage> {
     }
   }
 
+  BuildContext _buildContext;
+
   @override
   Widget build(BuildContext context) {
     // use this library https://pub.dev/packages/qr_code_scanner/install
-
+    this._buildContext = context;
     return Scaffold(
       body: Column(
         children: <Widget>[
@@ -62,12 +64,10 @@ class _ScanQRPageState extends State<ScanQRPage> {
           Expanded(
             flex: 1,
             child: Center(
-              child: (result != null)
-                  ? Text('Barcode Type: ${describeEnum(result.format)}   Data: ${result.code}')
-                  : Text('Scan the QR Code and Earn Points!',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      )),
+              child: Text('Scan the QR Code and Earn Points!',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  )),
             ),
           )
         ],
@@ -78,9 +78,11 @@ class _ScanQRPageState extends State<ScanQRPage> {
   void _onQRViewCreated(QRViewController controller) {
     this.controller = controller;
     controller.scannedDataStream.listen((scanData) {
-      setState(() {
-        result = scanData;
-      });
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Container(),
+          ));
     });
   }
 

@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/services/database.dart';
 
 class ProfilePageTopBar extends StatelessWidget {
   const ProfilePageTopBar({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [backgroundView(context), pointsView(context)],
+    return SingleChildScrollView(
+      child: Stack(
+        children: [backgroundView(context), pointsView(context)],
+      ),
     );
   }
 
@@ -21,7 +24,7 @@ class ProfilePageTopBar extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text('500',
+                Text('${Database.instance.getCurrentPoints()}',
                     style: TextStyle(
                         color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 30)),
                 Container(
@@ -45,12 +48,12 @@ class ProfilePageTopBar extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 160,
+          height: 120,
         ),
         Padding(
           padding: const EdgeInsets.fromLTRB(60, 40, 60, 0),
           child: Container(
-            height: 100,
+            height: 80,
             width: 240,
             child: pointsContent(),
             decoration: BoxDecoration(
@@ -77,12 +80,12 @@ class ProfilePageTopBar extends StatelessWidget {
 
   Widget backgroundView(BuildContext context) {
     return Container(
-      height: 350,
+      height: 280,
       child: Column(
         children: [
           Container(
             width: MediaQuery.of(context).size.width,
-            height: 250,
+            height: 200,
             color: Color.fromARGB(255, 184, 39, 37),
             child: Padding(
               padding: const EdgeInsets.all(25.0),
@@ -95,7 +98,7 @@ class ProfilePageTopBar extends StatelessWidget {
                         height: 80,
                         width: 80,
                         child: Image.network(
-                            'https://icon-library.com/images/doge-icon/doge-icon-28.jpg')),
+                            'https://res.cloudinary.com/practicaldev/image/fetch/s--7JgwXop1--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/46322/87bf8873-4fae-4766-b89f-1aba0ca06ef3.jpg')),
                   ),
                   Container(
                     width: 20,
@@ -106,12 +109,12 @@ class ProfilePageTopBar extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Doge',
+                          'Peter',
                           style: TextStyle(
                               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 22),
                         ),
                         Text(
-                          'Coin',
+                          'Lim Kan Sang',
                           style: TextStyle(color: Colors.white, fontSize: 18),
                         )
                       ],
@@ -121,7 +124,7 @@ class ProfilePageTopBar extends StatelessWidget {
               ),
             ),
           ),
-          Container(height: 100)
+          Container(height: 60)
         ],
       ),
     );
