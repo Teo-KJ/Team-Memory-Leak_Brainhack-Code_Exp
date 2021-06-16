@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/views/bottom_navigation/bottom_navigation.dart';
 import 'package:page_transition/page_transition.dart';
 import './QuizQuestions.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+
 
 class MyApp extends StatefulWidget {
   var index;
@@ -178,26 +180,43 @@ class QuizPage extends State<MyApp> {
                   width: MediaQuery.of(context).size.width * 0.7,
                 ),
               ),
+              SizedBox(height:20),
               Row(
                 children: <Widget>[
-                  ElevatedButton(
-                      child: const Text('Next'),
+                  Spacer(),
+                  SizedBox(width:30),
+                  Expanded(child:Center(child:Row(children:<Widget>[
+                  Text('${this.index+1}',
+                  style:TextStyle(color: Colors.red,fontSize: 22)),
+                  Text('/5',style:TextStyle(fontSize:22))]))),
+
+                  Padding(
+                    padding:EdgeInsets.fromLTRB(0, 0, 15, 0),
+                      child:ElevatedButton(
+                      child: this.index==4? Text('Submit'):Text('Next'),
                       onPressed: () {
                         print(this.index);
                         print(this.question);
                         print(this.choices);
+                        if (this.index<4){
                         Navigator.push(
                             context,
                             PageTransition(
                                 type: PageTransitionType.rightToLeft, child: MyApp(index:this.index+1,
-                              question: QuizQuestions[this.index+1]['question'],choices:QuizQuestions[this.index+1]['choices'])));
+                              question: QuizQuestions[this.index+1]['question'],choices:QuizQuestions[this.index+1]['choices'])));}
+                        else{
+                          showToast();
+                        }
                         /*Navigator.push(
                     context,
 
                     MaterialPageRoute(builder: (_) => new MyApp()));*/
-                      })
+                      })),
+
                 ],
-              )
+              ),
+
+        SizedBox(height:20),
             ])));
   }
 
@@ -215,5 +234,17 @@ class QuizPage extends State<MyApp> {
       value = snapshot.value;
       print(value);
     });*/
+  }
+
+  void showToast() {
+    Fluttertoast.showToast(
+        msg: 'Congrats you have earned 25 points!',
+
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIos: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.yellow
+    );
   }
 }
