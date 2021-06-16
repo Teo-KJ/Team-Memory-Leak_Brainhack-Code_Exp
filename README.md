@@ -7,5 +7,9 @@ We are a group of third year undergraduate students in computer science from Nan
 
 --------
 
+## QR Code Example
+
+![frame](https://user-images.githubusercontent.com/48687942/122216836-686dfe80-cedf-11eb-9ef1-6ff9cc0cde97.png)
+
 ## About (Product)
 
