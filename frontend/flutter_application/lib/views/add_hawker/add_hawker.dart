@@ -12,9 +12,17 @@ class _HomePageState extends State<AddHawker> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.red[400],
+          title: Align(
+            alignment: Alignment.center,
+            child: Text('Add a Hawker')
+          )
+        ),
+
         body: Column(children: <Widget>[
 
-          Padding(padding: EdgeInsets.all(45.0)),
+          Padding(padding: EdgeInsets.all(5.0)),
 
           Container(
             child:
@@ -38,7 +46,6 @@ class _HomePageState extends State<AddHawker> {
                         Container(
                           height: 40,
                           child: TextField(
-                            obscureText: true,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
                             ),
@@ -68,7 +75,6 @@ class _HomePageState extends State<AddHawker> {
                               height: 40,
                               width: 40,
                               child: TextField(
-                                obscureText: true,
                                 decoration: InputDecoration(
                                   border: OutlineInputBorder(),
                                   labelText: '#',
@@ -82,7 +88,6 @@ class _HomePageState extends State<AddHawker> {
                               height: 40,
                               width: 110,
                               child: TextField(
-                                  obscureText: true,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
                                   ),
@@ -100,7 +105,6 @@ class _HomePageState extends State<AddHawker> {
                               height: 40,
                               width: 110,
                               child: TextField(
-                                  obscureText: true,
                                   decoration: InputDecoration(
                                     border: OutlineInputBorder(),
                                   ),
@@ -131,7 +135,6 @@ class _HomePageState extends State<AddHawker> {
                         Container(
                           height: 40,
                           child: TextField(
-                            obscureText: true,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
                             ),
@@ -144,6 +147,7 @@ class _HomePageState extends State<AddHawker> {
 
                   Container(
                       width: 300.0,
+                      height: 280,
                       child: Column(children: [
                         Align(
                             alignment: Alignment.centerLeft,
@@ -155,9 +159,8 @@ class _HomePageState extends State<AddHawker> {
                         Padding(padding: EdgeInsets.all(5.0)),
 
                         Container(
-                          height: 200,
+                          height: 250,
                           child: TextField(
-                            obscureText: true,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
                             ),
@@ -169,9 +172,19 @@ class _HomePageState extends State<AddHawker> {
 
                   ),
 
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.all(16.0),
+                      primary: Colors.red,
+                      textStyle: const TextStyle(fontSize: 20),
+                    ),
+                    onPressed: () {},
+                    child: const Text('Submit'),
+                  ),
+
                 ],),
 
-              ),
+                ),
 
               ),
 
