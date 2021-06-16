@@ -1,5 +1,6 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application/views/add_hawker/add_hawker.dart';
 import 'package:flutter_application/views/home_page/home_page.dart';
 import 'package:flutter_application/views/profile_page/profile_page.dart';
 import 'package:flutter_application/views/qr_page/scan_qr_page.dart';
@@ -17,6 +18,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   var pages = [
     HomePage(),
     ScanQRPage(),
+    AddHawker(),
     ProfilePage(),
   ];
 
@@ -42,6 +44,12 @@ class _BottomNavigationState extends State<BottomNavigation> {
           BottomNavyBarItem(
             icon: Icon(Icons.qr_code),
             title: Text('Scan'),
+            activeColor: Colors.red,
+            textAlign: TextAlign.center,
+          ),
+          BottomNavyBarItem(
+            icon: Icon(Icons.add_circle),
+            title: Text('Add Hawker'),
             activeColor: Colors.red,
             textAlign: TextAlign.center,
           ),

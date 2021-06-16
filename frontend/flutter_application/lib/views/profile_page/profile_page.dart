@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/views/profile_page/components/top_bar.dart';
-
 import 'components/history_section.dart';
 import 'components/voucher_section.dart';
 
