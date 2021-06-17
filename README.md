@@ -16,7 +16,7 @@ Businesses that do not have an online presence to offer the products and service
 
 ## Our Solution: Know the Hawkers
 <img height="500" alt="image" src=https://user-images.githubusercontent.com/48685014/122309187-6720ee00-cf40-11eb-9abc-cd2e7cdf54cb.png>
-Know Your Hawkers is a mobile application designed for users to find out about hawker stalls in Singapore that are not digitally savvy. These hawker stalls do not have online presence on food delivery or digital payments platforms, and may be severely impacted in their business as more customers use the online services to purchase their food. Hence, the mobile app is developed to allow users to identify these hawkers in Singapore's hawker centres.
+Know the Hawkers is a mobile application designed for users to find out about hawker stalls in Singapore that are not digitally savvy. These hawker stalls do not have online presence on food delivery or digital payments platforms, and may be severely impacted in their business as more customers use the online services to purchase their food. Hence, the mobile app is developed to allow users to identify these hawkers in Singapore's hawker centres.
 
 ## App Features
 ### 1. Login/Sign up Page
